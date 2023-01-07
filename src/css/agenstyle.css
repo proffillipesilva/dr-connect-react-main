@@ -1,38 +1,38 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-body {
+#AgentStyle body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
 
-body * {
+#AgentStylebody * {
   box-sizing: border-box;
 }
 
-.header {
+#AgentStyle .header {
   width: 100%;
   height: 25%;
   display: flex;
 }
 
-.logo {
+#AgentStyle.logo {
   width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.logo > img {
+#AgentStyle.logo > img {
   cursor: pointer;
   width: 40%;
 }
 
-.menu {
+#AgentStyle .menu {
   padding-left: 10%;
   width: 70%;
 }
 
-.menu li {
+#AgentStyle .menu li {
   margin: 10px;
   list-style: none;
   display: inline-flex;
@@ -40,7 +40,7 @@ body * {
   font-weight: 800;
   cursor: pointer;
 }
-.menu ul li a::after {
+#AgentStyle.menu ul li a::after {
   content: "";
   margin-left: 7px;
   display: flex;
@@ -52,12 +52,12 @@ body * {
   transition: all 300ms ease-in-out;
 }
 
-.menu ul li a:hover::after {
+#AgentStyle.menu ul li a:hover::after {
   width: 80%;
   left: 25%;
 }
 
-.body {
+#AgentStyle.body {
   margin-top: 6%;
   width: 100%;
   display: flex;
@@ -66,7 +66,7 @@ body * {
   flex-direction: column;
 }
 
-.card-scheduling {
+#AgentStyle .card-scheduling {
   width: 45%;
   display: flex;
   justify-content: center;
@@ -78,7 +78,7 @@ body * {
   box-shadow: 0px 10px 40px #00000056;
 }
 
-.textfield {
+#AgentStyle .textfield {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -87,7 +87,7 @@ body * {
   width: 100%;
 }
 
-.textfield > input {
+#AgentStyle .textfield > input {
   width: 100%;
   border: none;
   border-radius: 10px;
@@ -100,28 +100,28 @@ body * {
   box-sizing: border-box;
 }
 
-.textfield > input:hover {
+#AgentStyle .textfield > input:hover {
   box-shadow: 0px 10px 40px #00000056;
 }
 
-.textfield > label {
+#AgentStyle .textfield > label {
   color: #747474;
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-.textfield > input::placeholder {
+#AgentStyle .textfield > input::placeholder {
   color: #11b9c4;
 }
 
-.card-button {
+#AgentStyle .card-button {
   width: 100%;
   display: flex;
   justify-content: flex-end;
   align-items: flex-end;
 }
 
-.btn-scheduling {
+#AgentStyle .btn-scheduling {
   width: 40%;
   padding: 16px 0px;
   margin: 18px;
@@ -137,10 +137,10 @@ body * {
   box-shadow: 0px 10px 40px -12px #067981c4;
 }
 
-.trasitionButton {
+#AgentStyle .trasitionButton {
   transition: transform 1s;
 }
 
-.trasitionButton:hover {
+#AgentStyle .trasitionButton:hover {
   transform: scale(1.1);
 }

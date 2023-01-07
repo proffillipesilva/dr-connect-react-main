@@ -4,7 +4,7 @@ import axiosInstance from "../axios";
 import Swal from "sweetalert2";
 import logoCard from "../images/logo-card-login.svg";
 
-const CadastroMain = ({ Data }) => {
+const EditProfile = ({ Data }) => {
   const [Id, setId] = React.useState("");
   const [Nome, setNome] = React.useState("");
   const [Email, setEmail] = React.useState("");
@@ -123,4 +123,4 @@ const CadastroMain = ({ Data }) => {
   );
 };
 
-export default CadastroMain;
+export default EditProfile;

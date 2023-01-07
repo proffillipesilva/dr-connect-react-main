@@ -5,6 +5,7 @@ import "../css/Header.css";
 
 const Header = (props) => {
   return (
+    <div id="Header">
     <div className="header">
       <div className="logo">
         <img src={Logo} className="logo" alt="Logo"></img>
@@ -12,7 +13,7 @@ const Header = (props) => {
       <div class="menu">
         <nav>
           {props.loggedIn ? (
-            props.role == "ROLE_PATIENT" ? (
+            props.role === "ROLE_PATIENT" ? (
               <ul>
                 <li>
                   <NavLink to={"/home"}> Home </NavLink>
@@ -55,6 +56,7 @@ const Header = (props) => {
           )}
         </nav>
       </div>
+    </div>
     </div>
   );
 };

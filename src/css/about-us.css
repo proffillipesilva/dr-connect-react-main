@@ -1,0 +1,57 @@
+#AboutUs .card-body-main {
+  background-image: url("../images/Doctor-sobrenos.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-x: center;
+  background-color: #ddd;
+  height: 30vw;
+  width: 90vw;
+  margin: 30px auto;
+}
+
+#AboutUs {
+  margin: 5vw;
+  font-size: 1vw;
+}
+
+#AboutUs .card-text-left {
+  position: absolute;
+  left: 10%;
+  font-size: 2em;
+}
+
+#AboutUs .accessibility {
+  font-size: 2em;
+}
+
+#AboutUs .desc-image {
+  display: inline-block;
+  padding: 5vw;
+}
+
+
+#AboutUs .desc-image img {
+  width: 15vw;
+  height: 15vw;
+}
+
+#AboutUs .our  img {
+  width: 20vw;
+  height: 20vw;
+}
+
+#AboutUs .image-right {
+  float: right;
+  margin-left: 20px;
+}
+
+#AboutUs .image-left  {
+  float: left;
+  margin-right: 20px;
+}
+
+#AboutUs .our {
+  text-align: justify;
+  font-size: 2vw;
+  width: 90vw;
+}

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
 import Doc from "../images/doctor-home.png";
-import "../css/homestyle.css";
+import "../css/home-style.css";
 import useDebounce from "../useDebounce";
 
 const HomeMain = ({ value, onChange }) => {
@@ -14,7 +14,7 @@ const HomeMain = ({ value, onChange }) => {
   }
 
   return (
-    <>
+    <div id="HomeStyle">
       <div className="body">
         <div className="header-body">
           <div className="left-header-body">
@@ -73,7 +73,7 @@ const HomeMain = ({ value, onChange }) => {
         </p>
         <span>COPYRIGHT © 2022 TODOS OS DIREITOS RESERVADOS</span>
       </div>
-    </>
+    </div>
   );
 };
 

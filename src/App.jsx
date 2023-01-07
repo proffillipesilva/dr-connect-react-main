@@ -1,18 +1,17 @@
 import React from "react";
 import { useSelector } from "react-redux";
 import { Outlet, Routes, Route } from "react-router-dom";
-import EditarPerfil from "./Telas/EditarPerfil";
 import Header from "./Telas/Header";
 import HomeMain from "./Telas/HomeMain";
-import SobreNos from "./Telas/SobreNos";
+import AboutUs from "./Telas/AboutUs";
 import Login from "./Telas/Login";
-import Agendamento from "./Telas/Agendamento";
+import MakeAppointment from "./Telas/MakeAppointment";
 import Filtro from "./Telas/Filtro";
 import Agenda from "./Telas/Agenda";
-import HomeMedico from "./Telas/HomeMedico";
-import HomePaciente from "./Telas/HomePaciente";
-import PerfilPaciente from "./Telas/PerfilPaciente";
-import PerfilMedico from "./Telas/PerfilMedico";
+import HomeDoctor from "./Telas/HomeDoctor";
+import HomePatient from "./Telas/HomePatient";
+import PatientProfile from "./Telas/PatientProfile";
+import DoctorProfile from "./Telas/DoctorProfile";
 
 const App = () => {
   const loggedIn = useSelector((state) => state.loggedIn);
@@ -20,25 +19,18 @@ const App = () => {
 
   return (
     <>
-      <Header role={role} loggedIn={!loggedIn} />
+      <Header role={role} loggedIn={loggedIn} />
       <Routes>
-        {!loggedIn ? (
+        {loggedIn ? (
           <>
-            {role == "ROLE_DOCTOR" ? (
+            {role === "ROLE_PATIENT" ? (
               <>
-                <Route
-                  path="/edit-profile"
-                  element={
-                    <>
-                      <EditarPerfil />
-                    </>
-                  }
-                />
+                
                 <Route
                   path="/agenda"
                   element={
                     <>
-                      <Agendamento />
+                      <MakeAppointment />
                     </>
                   }
                 />
@@ -54,7 +46,7 @@ const App = () => {
                   path="/edit-profile"
                   element={
                     <>
-                      <PerfilPaciente />
+                      <PatientProfile />
                     </>
                   }
                 />
@@ -62,21 +54,13 @@ const App = () => {
                   path="*"
                   element={
                     <>
-                      <HomePaciente />
+                      <HomePatient />
                     </>
                   }
                 />
               </>
             ) : (
               <>
-                <Route
-                  path="/edit-profile"
-                  element={
-                    <>
-                      <EditarPerfil />
-                    </>
-                  }
-                />
                 <Route
                   path="/agenda"
                   element={
@@ -89,7 +73,7 @@ const App = () => {
                   path="/edit-profile"
                   element={
                     <>
-                      <PerfilMedico />
+                      <DoctorProfile />
                     </>
                   }
                 />
@@ -97,7 +81,7 @@ const App = () => {
                   path="*"
                   element={
                     <>
-                      <HomeMedico />
+                      <HomeDoctor />
                     </>
                   }
                 />
@@ -110,7 +94,7 @@ const App = () => {
               path="/nossos-servicos"
               element={
                 <>
-                  <SobreNos />
+                  <AboutUs />
                 </>
               }
             />

@@ -2,7 +2,7 @@ const initialState = {
   count: 0,
   selectedProducts: [],
   loggedIn: false,
-  role: "ROLE_PATIENT",
+  role: "ROLE_DOCTOR",
 };
 
 export default function globalReducer(state = initialState, action) {

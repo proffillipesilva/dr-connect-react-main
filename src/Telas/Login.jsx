@@ -1,5 +1,5 @@
 import React from "react";
-import "../css/loginstyle.css";
+import "../css/login-style.css";
 import DrConnect from "../images/logo-card-login.svg";
 import { useDispatch } from "react-redux";
 import { GoogleLogin } from "@react-oauth/google";
@@ -54,7 +54,7 @@ const Login = (props) => {
   };
 
   return (
-    <div>
+    <div id="LoginStyle">
       <div className="main-login">
         <div className="right-login">
           <div className="card-login">

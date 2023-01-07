@@ -1,18 +1,18 @@
 import React, { useState, useEffect } from "react";
-import "../css/medico.css";
+import "../css/doctor-profile.css";
 import axiosInstance from "../axios";
 import logoCard from "../images/logo-card-login.svg";
 
-const CadastroMedico = () => {
+const DoctorProfile = () => {
   const [form, setForm] = useState({
     name: "",
     crm: "",
     speciality: "",
     phoneNumber: "",
-    cep: "",
-    numberStreet: "",
+    zipCode: "",
+    address: "",
     complement: "",
-    medicalInsurance: "",
+    healthInsurance: "",
   });
   const updateForm = (e) => {
     setForm({ ...form, [e.target.name]: e.target.value });
@@ -37,10 +37,10 @@ const CadastroMedico = () => {
         name: doctor.name,
         cep: doctor.cep,
         phoneNumber: doctor.phoneNumber,
-        numberStreet: doctor.numberStreet,
+        address: doctor.address,
         crm: doctor.crm,
         speciality: doctor.speciality,
-        medicalInsurance: doctor.medicalInsurance,
+        healthInsurance: doctor.healthInsurance,
         complement: doctor.complement,
       });
       // setUser(user);
@@ -52,7 +52,7 @@ const CadastroMedico = () => {
   }, []);
 
   return (
-    <div>
+    <div id="DoctorProfile">
       <div className="main-login">
         <div className="left-login">
           <h1>
@@ -64,12 +64,18 @@ const CadastroMedico = () => {
           <div className="card-login-medic">
             <div className="title-a">
               <a>Bem Vindo(a) ao</a>
+              <br />
             </div>
             <div className="title">
               <img src={logoCard} className="title-image" />
+              <br />
+              <br />
+              <br />
+              <br />
             </div>
+           
             <div className="textfield">
-              <label for="nome">Nome</label>
+              <label for="name">Nome</label>
               <input
                 type="text"
                 name="name"
@@ -104,15 +110,15 @@ const CadastroMedico = () => {
               />
             </div>
             <div className="textfield">
-              <label for="medicalInsurance">Plano de Saúde</label>
+              <label for="healthInsurance">Plano de Saúde</label>
               <input
-                id="medicalInsurance"
+                id="healthInsurance"
                 type="text"
-                name="medicalInsurance"
+                name="healthInsurance"
                 placeholder="Plano de Saúde"
                 required
                 onChange={updateForm}
-                value={form.medicalInsurance}
+                value={form.healthInsurance}
               />
             </div>
             <div className="textfield">
@@ -129,27 +135,27 @@ const CadastroMedico = () => {
             </div>
 
             <div className="textfield">
-              <label for="cep">CEP</label>
+              <label for="zipCode">CEP</label>
               <input
-                id="cep"
+                id="zipCode"
                 type="text"
-                name="cep"
+                name="zipCode"
                 placeholder="CEP"
                 required
                 onChange={updateForm}
-                value={form.cep}
+                value={form.zipCode}
               />
             </div>
             <div className="textfield">
-              <label for="numberStreet">Número</label>
+              <label for="address">Endereco</label>
               <input
-                id="numberStreet"
+                id="address"
                 type="text"
-                name="numberStreet"
-                placeholder="Número"
+                name="address"
+                placeholder="Endereco"
                 required
                 onChange={updateForm}
-                value={form.numberStreet}
+                value={form.address}
               />
             </div>
             <div className="textfield">
@@ -168,14 +174,15 @@ const CadastroMedico = () => {
               Dr. Connect e reconhece que leu e entendeu nossa política de
               privacidade.
             </p>
-          </div>
-          <button onClick={submitForm} className="btn-login trasitionButton">
+            <button onClick={submitForm} className="btn-login trasitionButton">
             Prosseguir
           </button>
+          </div>
+         
         </div>
       </div>
     </div>
   );
 };
 
-export default CadastroMedico;
+export default DoctorProfile;

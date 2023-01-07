@@ -1,15 +1,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-body {
+#PatientProfile body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
 
-body * {
+
+#PatientProfile body * {
   box-sizing: border-box;
 }
 
-.main-login {
+
+#PatientProfile .main-login {
   width: 100vw;
   height: 100vh;
   background: #e5e5e5;
@@ -18,7 +20,8 @@ body * {
   align-items: center;
 }
 
-.left-login {
+
+#PatientProfile .left-login {
   width: 50vw;
   height: 50vh;
   display: flex;
@@ -27,16 +30,18 @@ body * {
   flex-direction: column;
 }
 
-.left-login > h1 {
+
+#PatientProfile .left-login > h1 {
   font-size: 3vw;
   color: #11b9c4;
 }
 
-.left-login-image {
+
+#PatientProfile .left-login-image {
   width: 35vw;
 }
 
-.right-login {
+#PatientProfile .right-login {
   width: 50vw;
   height: 50vh;
   display: flex;
@@ -44,7 +49,7 @@ body * {
   align-items: center;
 }
 
-.card-login-medic {
+#PatientProfile .card-login-patient {
   display: grid !important;
   column-gap: 10px !important;
   row-gap: 10px !important;
@@ -58,29 +63,29 @@ body * {
   box-shadow: 0px 10px 40px #00000056 !important;
 }
 
-.title {
+#PatientProfile .title {
   width: 100%;
   display: flex;
   justify-content: center;
 }
 
-.title-a > a {
+#PatientProfile .title-a > a {
   color: #747474;
 }
 
-.title > h1 {
+#PatientProfile .title > h1 {
   text-transform: uppercase;
   color: #11b9c4;
   font-weight: 800;
   margin: 0;
 }
 
-.title > img {
+#PatientProfile .title > img {
   margin-right: 5px;
   height: 4vh;
 }
 
-.textfield {
+#PatientProfile .textfield {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -89,7 +94,7 @@ body * {
   width: 100%;
 }
 
-.textfield > input {
+#PatientProfile .textfield > input {
   width: 100%;
   border: none;
   border-radius: 10px;
@@ -102,25 +107,25 @@ body * {
   box-sizing: border-box;
 }
 
-.textfield > input:hover {
+#PatientProfile .textfield > input:hover {
   box-shadow: 0px 10px 40px #00000056;
 }
 
-.textfield > label {
+#PatientProfile .textfield > label {
   color: #747474;
   font-size: 1.2rem;
   margin-bottom: 10px;
 }
 
-.textfield > input::placeholder {
+#PatientProfile .textfield > input::placeholder {
   color: #11b9c4;
 }
 
-.textfield > p {
+#PatientProfile .textfield > p {
   font-size: 14px;
 }
 
-.btn-login {
+#PatientProfile .btn-login {
   width: 100%;
   padding: 16px 0px;
   margin: 25px;
@@ -136,75 +141,75 @@ body * {
   box-shadow: 0px 10px 40px -12px #067981c4;
 }
 
-.trasitionButton {
+#PatientProfile .trasitionButton {
   transition: transform 1s;
 }
 
-.trasitionButton:hover {
+#PatientProfile .trasitionButton:hover {
   transform: scale(1.1);
 }
 
 @media only screen and (max-width: 950px) {
-  .card-login {
+  #PatientProfile .card-login {
     width: 85%;
   }
 
-  .card-login > h1 {
+  #PatientProfile .card-login > h1 {
     font-weight: 800;
   }
 }
 
 @media only screen and (max-width: 600px) {
-  .main-login {
+  #PatientProfile .main-login {
     display: flex;
     flex-direction: column;
   }
 
-  .left-login > h1 {
+  #PatientProfile .left-login > h1 {
     display: none;
   }
 
-  .left-login {
+  #PatientProfile .left-login {
     width: 100%;
     height: auto;
   }
 
-  .right-login {
+  #PatientProfile .right-login {
     width: 100%;
     height: auto;
   }
 
-  .left-login-image {
+  #PatientProfile .left-login-image {
     width: 50vw;
   }
 
-  .card-login {
+  #PatientProfile .card-login {
     width: 90%;
   }
 
-  .title > h1 {
+  #PatientProfile .title > h1 {
     font-weight: 800;
   }
 
-  .title {
+  #PatientProfile .title {
     display: flex;
     flex-direction: column;
     align-items: center;
   }
 
-  .title > img {
+  #PatientProfile .title > img {
     height: 4vh;
     width: 5vw;
   }
 }
 
 @media only screen and (max-width: 350px) {
-  .title > img {
+  #PatientProfile .title > img {
     height: 4vh;
     width: 7vw;
   }
 
-  .title > h1 {
+  #PatientProfile .title > h1 {
     font-size: 1.4rem;
   }
 }

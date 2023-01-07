@@ -1,9 +1,9 @@
 import React, { useState, useEffect } from "react";
-import "../css/paciente.css";
+import "../css/patient.css";
 import axiosInstance from "../axios";
 import logoCard from "../images/logo-card-login.svg";
 
-const CadastroPaciente = () => {
+const PatientProfile = () => {
   const [form, setForm] = useState({
     name: "",
     cpf: "",
@@ -161,4 +161,4 @@ const CadastroPaciente = () => {
   );
 };
 
-export default CadastroPaciente;
+export default PatientProfile;

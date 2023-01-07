@@ -2,7 +2,7 @@ import React from "react";
 import "../css/agenstyle.css";
 import Logo from "../images/logo.svg";
 
-const Agendamento = () => {
+const MakeAppointment = () => {
   const filter = [];
 
   return (
@@ -31,4 +31,4 @@ const Agendamento = () => {
   );
 };
 
-export default Agendamento;
+export default MakeAppointment;

@@ -1,10 +1,10 @@
 import React from "react";
 import Logo from "../images/logo.svg";
-import "../css/homepatient.css";
+import "../css/home-patient.css";
 
-const HomePaciente = () => {
+const HomePatient = () => {
   return (
-    <div>
+    <div id="HomePatient">
       <div className="body">
         <div className="header-body">
           <div className="left-header-body">
@@ -16,4 +16,4 @@ const HomePaciente = () => {
   );
 };
 
-export default HomePaciente;
+export default HomePatient;

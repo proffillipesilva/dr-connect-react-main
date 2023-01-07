@@ -1,38 +1,41 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat&display=swap");
 
-body {
+#HomeStyle body {
   margin: 0;
   font-family: "Montserrat", sans-serif;
 }
 
-body * {
+
+#HomeStyle body * {
   box-sizing: border-box;
 }
 
-.header {
+
+#HomeStyle .header {
   width: 100%;
   height: 25%;
   display: flex;
 }
 
-.logo {
+
+#HomeStyle .logo {
   width: 30%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
-.logo > img {
+#HomeStyle .logo > img {
   cursor: pointer;
   width: 30%;
 }
 
-.menu {
+#HomeStyle .menu {
   padding-left: 20%;
   width: 70%;
 }
 
-.menu li {
+#HomeStyle .menu li {
   margin: 10px;
   list-style: none;
   display: inline-flex;
@@ -41,12 +44,12 @@ body * {
   cursor: pointer;
 }
 
-a {
+#HomeStyle a {
   color: black;
   text-decoration: none;
 }
 
-.menu ul li a::after {
+#HomeStyle .menu ul li a::after {
   content: "";
   margin-left: 13px;
   display: flex;
@@ -58,22 +61,22 @@ a {
   transition: all 300ms ease-in-out;
 }
 
-.menu ul li a:hover::after {
+#HomeStyle .menu ul li a:hover::after {
   width: 80%;
   left: 25%;
 }
 
-.body {
+#HomeStyle .body {
   width: 100%;
 }
 
-.header-body {
+#HomeStyle .header-body {
   width: 98vw !important;
   height: 60vh !important;
   display: flex !important;
 }
 
-.left-header-body {
+#HomeStyle .left-header-body {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
@@ -81,18 +84,18 @@ a {
   height: 60vh !important;
 }
 
-.left-header-body {
+#HomeStyle .left-header-body {
   font-size: 1.5vw !important;
 }
 
-.left-header-body h1 {
+#HomeStyle .left-header-body h1 {
   color: #1d1d1d;
   margin-top: -100px;
   font-size: 2.6rem;
   font-weight: 900;
 }
 
-.right-header-body {
+#HomeStyle .right-header-body {
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
@@ -100,10 +103,11 @@ a {
   height: 60vh !important;
 }
 
-.right-header-body > img {
+#HomeStyle .right-header-body > img {
   border-radius: 50% !important;
-  width: 85% !important;
+  width: 70% !important;
   margin-right: 40px !important;
+  z-index: -1;
 }
 
 .card-body {
@@ -115,7 +119,7 @@ a {
   box-shadow: 0px 10px 40px #00000056 !important;
 }
 
-.card-title {
+#HomeStyle .card-title {
   width: 100% !important;
   height: 100% !important;
   font-size: 0.85vw !important;
@@ -124,7 +128,7 @@ a {
   align-items: center !important;
 }
 
-.card-title h1 {
+#HomeStyle .card-title h1 {
   margin-top: 0;
   color: #1d1d1d;
   font-size: 2.4rem;
@@ -132,13 +136,13 @@ a {
   letter-spacing: 1px;
 }
 
-.textfield {
+#HomeStyle .textfield {
   display: inline !important;
   margin: 10px 0px !important;
   width: 100% !important;
 }
 
-.textfield > input {
+#HomeStyle .textfield > input {
   width: 40% !important;
   height: 10vh !important;
   border: none !important;
@@ -150,22 +154,22 @@ a {
   outline: none !important;
 }
 
-.textfield > input:hover {
+#HomeStyle .textfield > input:hover {
   box-shadow: 0px 10px 40px #00000056 !important;
   transition: 0.3s ease-in-out !important;
 }
 
-.textfield > input::placeholder {
+#HomeStyle .textfield > input::placeholder {
   color: #11b9c4 !important;
   font-size: 1.2vw !important;
 }
 
-.card-button {
+#HomeStyle .card-button {
   padding-left: 3% !important;
   display: inline !important;
 }
 
-.card-button button {
+#HomeStyle .card-button button {
   margin: 10px 0 0 0 !important;
   width: 95% !important;
   height: 8% !important;
@@ -179,21 +183,21 @@ a {
   cursor: pointer !important;
 }
 
-.trasitionButton {
+#HomeStyle .trasitionButton {
   transition: transform 1s !important;
 }
 
-.trasitionButton:hover {
+#HomeStyle .trasitionButton:hover {
   transform: scale(1.2) !important;
 }
 
-.header-footer {
+#HomeStyle .header-footer {
   width: 100% !important;
   height: 60vh !important;
   display: flex !important;
 }
 
-.first-image {
+#HomeStyle .first-image {
   display: flex;
   justify-content: center;
   flex-direction: column;
@@ -202,13 +206,13 @@ a {
   width: 100%;
 }
 
-.first-image img {
+#HomeStyle .first-image img {
   width: 15%;
   height: 23%;
   border-radius: 70%;
 }
 
-.first-image > span {
+#HomeStyle .first-image > span {
   padding-right: 5%;
   padding-top: 4%;
   font-size: 1.2vw;
@@ -221,14 +225,14 @@ a {
   text-transform: uppercase;
 }
 
-.thirty-image > span {
+#HomeStyle .thirty-image > span {
   padding-left: 5%;
   padding-top: 4%;
   font-size: 1.2vw;
   text-transform: uppercase;
 }
 
-.second-image {
+#HomeStyle .second-image {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -237,13 +241,13 @@ a {
   width: 100%;
 }
 
-.second-image > img {
+#HomeStyle .second-image > img {
   width: 13vw;
   height: 23vh;
   border-radius: 70%;
 }
 
-.thirty-image {
+#HomeStyle .thirty-image {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -252,13 +256,13 @@ a {
   width: 100%;
 }
 
-.thirty-image > img {
+#HomeStyle .thirty-image > img {
   width: 13vw;
   height: 23vh;
   border-radius: 70%;
 }
 
-.copy {
+#HomeStyle .copy {
   font-size: 0.9vw;
   width: 100%;
   display: flex;
