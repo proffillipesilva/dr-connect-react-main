@@ -1,15 +1,19 @@
 import React from "react";
 import "../css/login-style.css";
 import DrConnect from "../images/logo-card-login.svg";
+import Doc from "../images/doctor-home.png";
 import { useDispatch } from "react-redux";
-import { GoogleLogin } from "@react-oauth/google";
+import { GoogleLogin, useGoogleLogin } from "@react-oauth/google";
 import axiosInstance from "../axios";
 import { useNavigate } from "react-router-dom";
+import { borderRadius } from "@mui/system";
 
 const Login = (props) => {
   const [form, setForm] = React.useState({ email: "", senha: "" });
+  const [willLogin, setwillLogin] = React.useState(null)
   const dispatch = useDispatch();
   const navigate = useNavigate();
+  
 
   const [role, setrole] = React.useState("ROLE_DOCTOR");
 
@@ -17,6 +21,10 @@ const Login = (props) => {
     setrole(event.target.value);
     console.log(event.target.value);
   }
+
+  const login = useGoogleLogin({
+    onSuccess: async tokenResponse => await responseGoogle(tokenResponse),
+  });
 
   const responseGoogle = async (response) => {
     console.log(response);
@@ -56,7 +64,7 @@ const Login = (props) => {
   return (
     <div id="LoginStyle">
       <div className="main-login">
-        <div className="right-login">
+        <div>
           <div className="card-login">
             <div className="title-a">
               <a>Bem Vindo(a) ao</a>
@@ -64,6 +72,9 @@ const Login = (props) => {
             <div className="title">
               <img src={DrConnect} className="title-image" />
             </div>
+            <div >
+            <img alt="Doutora sorrindo" src={Doc} style={{textAlign: "center", width: "250px", height: "250px"}} />
+          </div>
             <div className="choice" onChange={onChangeValue}>
               <input
                 type="radio"
@@ -80,11 +91,18 @@ const Login = (props) => {
               />{" "}
               Patient
             </div>
-            <GoogleLogin
+            
+            {willLogin ? <GoogleLogin 
               className="google-button"
               onSuccess={responseGoogle}
               onFailure={responseGoogle}
-            />
+            /> : <button style={{
+              width: "300px", padding: "15px 10px", border: "none", backgroundColor: "#66bbbb", color: "white",
+              borderRadius: "5px 5px", fontWeight: "bold"
+            }
+              
+              } onClick={() => setwillLogin(true)}>Entre com Google</button>}
+            
           </div>
         </div>
       </div>

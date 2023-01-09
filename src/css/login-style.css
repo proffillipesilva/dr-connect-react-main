@@ -45,8 +45,6 @@
 }
 
 #LoginStyle .card-login {
-  width: 50% !important;
-  height: 60vh;
   display: flex !important;
   justify-content: center !important;
   align-items: center !important;
@@ -159,10 +157,7 @@
   transform: scale(1.095) !important;
 }
 
-#LoginStyle .choice {
-  font-size: 1.6rem;
-  margin-bottom: 0.8rem !important;
-}
+
 
 #LoginStyle .choice input[type="radio"] {
   width: 1rem;
@@ -175,10 +170,9 @@
   height: 1rem !important;
 }
 
+
 @media only screen and (max-width: 950px) {
-  #LoginStyle .card-login {
-    width: 95% !important;
-  }
+ 
 
   #LoginStyle .card-login > h1 {
     font-weight: 800 !important;
@@ -213,9 +207,6 @@
     width: 50vw !important;
   }
 
-  #LoginStyle .card-login {
-    width: 90% !important;
-  }
 
   #LoginStyle .title > h1 {
     font-weight: 800 !important;
@@ -227,10 +218,6 @@
     align-items: center !important;
   }
 
-  #LoginStyle .title > img {
-    height: 20% !important;
-    width: 30% !important;
-  }
 
   #LoginStyle .textfield input::placeholder {
     font-size: 0.9rem !important;
@@ -239,28 +226,10 @@
   #LoginStyle .textfield input[type="radio"] {
     width: 10px;
   }
-}
+} 
 
-@media only screen and (max-width: 350px) {
-  #LoginStyle .title img {
-    height: 5vh;
-    width: 10vw;
-  }
+@media only screen and (max-width: 400x) {
 
-  #LoginStyle .title-image {
-    width: 100px;
-    height: 50px;
-  }
+  
 
-  #LoginStyle .title > h1 {
-    font-size: 1.4rem !important;
-  }
-
-  #LoginStyle .textfield input::placeholder {
-    font-size: 0.8rem !important;
-  }
-
-  #LoginStyle .card-login {
-    height: 50vh;
-  }
 }

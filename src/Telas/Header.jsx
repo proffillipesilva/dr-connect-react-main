@@ -44,13 +44,10 @@ const Header = (props) => {
           ) : (
             <ul>
               <li>
-                <NavLink to={"/home"}> Home </NavLink>
+                <NavLink to={"/home"}> Login </NavLink>
               </li>
               <li>
                 <NavLink to={"/nossos-servicos"}> Nossos Serviços </NavLink>
-              </li>
-              <li>
-                <NavLink to={"/login"}> Login </NavLink>
               </li>
             </ul>
           )}
