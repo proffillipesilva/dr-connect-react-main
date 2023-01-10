@@ -2,7 +2,6 @@ import React from "react";
 import { useSelector } from "react-redux";
 import { Outlet, Routes, Route } from "react-router-dom";
 import Header from "./Telas/Header";
-import HomeMain from "./Telas/HomeMain";
 import AboutUs from "./Telas/AboutUs";
 import Login from "./Telas/Login";
 import MakeAppointment from "./Telas/MakeAppointment";
@@ -19,9 +18,9 @@ const App = () => {
 
   return (
     <>
-      <Header role={role} loggedIn={loggedIn} />
+      <Header role={role} loggedIn={!loggedIn} />
       <Routes>
-        {loggedIn ? (
+        {!loggedIn ? (
           <>
             {role === "ROLE_PATIENT" ? (
               <>
@@ -91,7 +90,7 @@ const App = () => {
         ) : (
           <>
             <Route
-              path="/nossos-servicos"
+              path="/about-us"
               element={
                 <>
                   <AboutUs />

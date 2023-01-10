@@ -85,7 +85,7 @@
 }
 
 #HomeDoctor .main-body {
-  width: 50%;
+  width: 80%;
   background-color: #ffffff;
   border-radius: 35px;
   display: flex;
@@ -95,12 +95,24 @@
 }
 
 #HomeDoctor .card-details {
+  font-size: 1rem;
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-evenly;
-  align-items: flex-end;
+  vertical-align: middle;
+}
+
+#HomeDoctor .card-details div {
+  text-align: center;
+  width: 30%;
+  display: inline-block;
+}
+
+#HomeDoctor .material-icons {
+  display: none;
+}
+
+#HomeDoctor .number {
+  font-size: xx-large;
+  font-weight: 500;
 }
 
 #HomeDoctor .body {
@@ -175,4 +187,20 @@
   width: 45rem;
   height: 52rem;
   background-color: #ffffff;
+}
+
+#HomeDoctor .table-appointment {
+  margin-top: 30px;
+  width: 100%;
+  min-height: 30vh;
+  background-color: white;
+}
+
+@media only screen and (max-width: 600px){
+  #HomeDoctor .material-icons {
+    display: block;
+  }
+  #HomeDoctor .text-number {
+    display: none;
+  }
 }

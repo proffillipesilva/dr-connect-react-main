@@ -19,13 +19,13 @@ const Header = (props) => {
                   <NavLink to={"/home"}> Home </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/agenda"}> Agendamento </NavLink>
+                  <NavLink to={"/agenda"}> Appointment </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/busca"}> Buscar </NavLink>
+                  <NavLink to={"/busca"}> Search </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/edit-profile"}> Perfil </NavLink>
+                  <NavLink to={"/edit-profile"}> Profile </NavLink>
                 </li>
               </ul>
             ) : (
@@ -34,10 +34,10 @@ const Header = (props) => {
                   <NavLink to={"/home"}> Home </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/agenda"}> Minha Agenda </NavLink>
+                  <NavLink to={"/agenda"}> Agenda </NavLink>
                 </li>
                 <li>
-                  <NavLink to={"/edit-profile"}> Perfil </NavLink>
+                  <NavLink to={"/edit-profile"}> Profile </NavLink>
                 </li>
               </ul>
             )
@@ -47,7 +47,7 @@ const Header = (props) => {
                 <NavLink to={"/home"}> Login </NavLink>
               </li>
               <li>
-                <NavLink to={"/nossos-servicos"}> Nossos Serviços </NavLink>
+                <NavLink to={"/about-us"}> About us </NavLink>
               </li>
             </ul>
           )}

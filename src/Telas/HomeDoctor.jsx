@@ -1,44 +1,46 @@
 import React from "react";
-import Logo from "../images/logo.svg";
 import "../css/home-doctor.css";
 
 const HomeDoctor = () => {
   return (
     <div id="HomeDoctor">
       <div className="main">
-        <h2 className="sub">Suas Estatísticas</h2>
+        <h2 className="sub">Dashboard</h2>
         <div className="body-body">
           <div className="main-body">
             <div className="card-details">
-              <div className="agend">
-                <p className="agg">Agendamentos</p>
+              <div>
+                <span className="number">7</span><br />
+                <span class="material-icons md-24">book</span><span className="text-number">Agendamentos</span>
               </div>
-              <div className="patients">
-                <p className="pat">Pacientes</p>
+              <div>
+                <span className="number">7</span><br />
+                <span class="material-icons md-24">face</span><span className="text-number">Pacientes</span>
               </div>
-              <div className="trat">
-                <p className="ment">Tratamentos</p>
+              <div>
+                <span className="number">7</span><br />
+                <span class="material-icons md-24">work</span><span className="text-number">Tratamentos</span>
               </div>
             </div>
           </div>
         </div>
         <div className="body">
-          <div className="header-body">
-            <div className="left-header-body"></div>
-            <div className="right-header-body">
-              <h2 className="sub-sub">Próximas Consultas</h2>
-              <div className="main-mini-card">
-                <div className="mini-card">
-                  <button>Agendamentos para Hoje</button>
-                </div>
-                <div className="mini-card">
-                  <button>Agendamentos para Amanhã</button>
-                </div>
-                <div className="mini-card">
-                  <button>Todos os Agendamentos</button>
-                </div>
-              </div>
-            </div>
+        <h2 className="sub-sub">Next Appointments</h2>
+          <div >
+            
+            
+            <table className="table-appointment">
+                  <thead>
+                    <th>Date</th>
+                    <th>Patient</th>
+                    <th>Desc</th>
+                  </thead>
+                  <tbody>
+
+                  </tbody>
+                </table>
+            
+           
           </div>
         </div>
       </div>

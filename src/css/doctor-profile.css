@@ -51,6 +51,7 @@
   grid-template-columns: auto auto !important;
   max-width: 800px !important;
   margin-left: auto !important;
+  margin-top: calc(400px - 20vw) !important;
   margin-right: auto !important;
   padding: 30px 35px !important;
   background: #ffffff !important;

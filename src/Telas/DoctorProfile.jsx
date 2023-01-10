@@ -23,7 +23,7 @@ const DoctorProfile = () => {
     try {
       const res = await axiosInstance.put(`/doctors`, form);
 
-      const data = await res.data;
+      await res.data;
     } catch (ex) {
       console.log(ex);
     }
@@ -63,7 +63,7 @@ const DoctorProfile = () => {
         <div className="right-login">
           <div className="card-login-medic">
             <div className="title-a">
-              <a>Bem Vindo(a) ao</a>
+              <a>Welcome to</a>
               <br />
             </div>
             <div className="title">
@@ -75,7 +75,7 @@ const DoctorProfile = () => {
             </div>
            
             <div className="textfield">
-              <label for="name">Nome</label>
+              <label for="name">Name</label>
               <input
                 type="text"
                 name="name"
@@ -86,7 +86,7 @@ const DoctorProfile = () => {
               />
             </div>
             <div className="textfield">
-              <label for="crm">CRM</label>
+              <label for="crm">Doctor ID</label>
               <input
                 id="crm"
                 type="text"
@@ -98,7 +98,7 @@ const DoctorProfile = () => {
               />
             </div>
             <div className="textfield">
-              <label for="speciality">Especialidade</label>
+              <label for="speciality">Speciality</label>
               <input
                 id="speciality"
                 type="text"
@@ -110,7 +110,7 @@ const DoctorProfile = () => {
               />
             </div>
             <div className="textfield">
-              <label for="healthInsurance">Plano de Saúde</label>
+              <label for="healthInsurance">Health Insurance</label>
               <input
                 id="healthInsurance"
                 type="text"
@@ -122,7 +122,7 @@ const DoctorProfile = () => {
               />
             </div>
             <div className="textfield">
-              <label for="phoneNumber">Telefone</label>
+              <label for="phoneNumber">Phone Number</label>
               <input
                 id="phoneNumber"
                 type="number"
@@ -135,7 +135,7 @@ const DoctorProfile = () => {
             </div>
 
             <div className="textfield">
-              <label for="zipCode">CEP</label>
+              <label for="zipCode">ZIP Code</label>
               <input
                 id="zipCode"
                 type="text"
@@ -147,7 +147,7 @@ const DoctorProfile = () => {
               />
             </div>
             <div className="textfield">
-              <label for="address">Endereco</label>
+              <label for="address">Address</label>
               <input
                 id="address"
                 type="text"
@@ -159,7 +159,7 @@ const DoctorProfile = () => {
               />
             </div>
             <div className="textfield">
-              <label for="complemento">Complemento</label>
+              <label for="complemento">Complement</label>
               <input
                 id="complemento"
                 type="text"
@@ -175,7 +175,7 @@ const DoctorProfile = () => {
               privacidade.
             </p>
             <button onClick={submitForm} className="btn-login trasitionButton">
-            Prosseguir
+            Submit
           </button>
           </div>
          
